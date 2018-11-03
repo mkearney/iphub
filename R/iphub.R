@@ -34,6 +34,7 @@ lookup_ipaddress <- function(ip, key = NULL) {
 #'
 #' }
 #' @return A tibble data frame or list/parsed response.
+#' @export
 iphub <- function(x, key = NULL) {
   x <- lapply(x, lookup_ipaddress)
   tryCatch(dplyr::bind_rows(x), error = function(e) x)
