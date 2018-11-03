@@ -1,0 +1,22 @@
+Package: iphub
+Title: Lookup safeness of IP addresses via iphub
+Version: 0.0.1
+Authors@R: 
+    person(given = "Michael W.",
+           family = "Kearney",
+           role = c("aut", "cre"),
+           email = "kearneymw@missouri.edu",
+           comment = c(ORCID = "0000-0002-0730-4694"))
+Description: An interfact to iphub's API <https://iphub.info>, which looks up
+    IP address and returns basic information along with blocking recommendations.
+License: GPL-3
+Encoding: UTF-8
+Langauge: en
+LazyData: true
+Imports: 
+    rtweet,
+    httr,
+    dplyr
+URL: https://github.com/mkearney/iphub
+BugReports: https://github.com/mkearney/iphub/issues
+RoxygenNote: 6.1.0
